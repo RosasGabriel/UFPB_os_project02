@@ -12,7 +12,11 @@ The detailed description for the project can be found in the trabalho02.pdf file
 -------------------------------------------------------------------------------------------------------------
 
 To compile the project use the following command:\
-**g++ -Iinclude src/*.cpp main.cpp -o <output_file_name>**
+```
+g++ -Iinclude src/*.cpp main.cpp -o <output_file_name>
+```
 
 To run the code use the following command:\
-**./<output_file_name>**
+```
+./<output_file_name>
+```
