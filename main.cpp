@@ -10,20 +10,20 @@
 int main()
 {
     Fifo fifo;
-    Lru lru;
     Otm otm;
+    Lru lru;
 
     fifo.readInputFile("input.txt");
     fifo.execute();
     fifo.displayResults();
 
-    lru.readInputFile("input.txt");
-    lru.execute();
-    lru.displayResults();
-    
     otm.readInputFile("input.txt");
     otm.execute();
     otm.displayResults();
+    
+    lru.readInputFile("input.txt");
+    lru.execute();
+    lru.displayResults();
 
     return 0;
 }
