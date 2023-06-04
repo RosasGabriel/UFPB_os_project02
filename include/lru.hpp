@@ -17,6 +17,7 @@ private:
     std::vector<int> page_requests;
 
     int num_frames;
+    int page_faults;
 };
 
 #endif // LRU_H
