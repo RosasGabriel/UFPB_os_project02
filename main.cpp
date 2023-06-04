@@ -10,9 +10,15 @@
 int main()
 {
     Fifo fifo;
+    Lru lru;
+
     fifo.readInputFile("input.txt");
     fifo.execute();
     fifo.displayResults();
+
+    lru.readInputFile("input.txt");
+    lru.execute();
+    lru.displayResults();
     
     return 0;
 }
