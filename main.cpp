@@ -11,6 +11,7 @@ int main()
 {
     Fifo fifo;
     Lru lru;
+    Otm otm;
 
     fifo.readInputFile("input.txt");
     fifo.execute();
@@ -20,5 +21,9 @@ int main()
     lru.execute();
     lru.displayResults();
     
+    otm.readInputFile("input.txt");
+    otm.execute();
+    otm.displayResults();
+
     return 0;
 }
