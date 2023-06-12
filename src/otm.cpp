@@ -39,7 +39,7 @@ void Otm::execute()
 {
     std::vector<int> page_table(num_frames, -1);    // Initialize page table with -1
 
-    for (const auto& page_request : page_requests)  // Iterate through page requests
+    for (int page_request : page_requests)  // Iterate through page requests
     {
         auto iterator = std::find(page_table.begin(), page_table.end(), page_request);  // Check if page is already in page table
         if (iterator == page_table.end())
